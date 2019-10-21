@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link href="style.css" rel='stylesheet'/>
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+</head>
+<body>
+  <div id="intro">
+    <h1 class="animated rotateInDownLeft">Pokedex</h1>
+    <div class="animated bounceInRight">There are 802 Pokemon Currently Discovered!</div>
+    <div class="animated bounceInLeft">If you are a professor please <a href="https://pokeapi.co/docsv2/">add a new pokemon.</a></div>
+    <div class="animated rollIn">Do you want to be the very best?</div>
+    <div class="animated bounceInUp">Catch em all!</div>
+    <h1 id="audioText">Click Me!</h1>
+    <audio class="audioControls" controls>
+        <source src="pokeMusic.mp3" type="audio/mp3">
+    </audio>
+    <form id=pokeform>
+        <input class="textEntry" id=pokenumber placeholder="Enter Poke Number"/>
+        <button class="button" type=submit>Go!</button>
+    </form>
+  </div>
+  <div id="statBlock">
+    <img src="pokeball.png" id="pokeimage"/>
+    <h2 id=pokename></h2>
+    <h2 id="height"></h2>
+    <h2 id="speed"></h2>
+    <h2 id="specialDefense"></h2>
+    <h2 id="specialAttack"></h2>
+    <h2 id="defense"></h2>
+    <h2 id="attack"></h2>
+    <h2 id="hp"></h2>
+  </div>
+  <!-- ///////////STORE PAGE//////// -->
+    <div id="storePg">
+      <h1>Rewards!</h1>
+      <div class="rewards-style" id="currentEXPTxt"></div>
+      <div class="rewards-style" id="charmeleonReward">Charmeleon: Unlock at 200 EXP</div>
+      <div class="rewards-style" id="charizardReward">Charizard: Unlock at 500 EXP</div>
+      <div class="rewards-style" id="warturtleReward">Warturtle: Unlock at 1000 EXP</div>
+      <div class="rewards-style" id="blastoiseReward">Blastoise: Unlock at 1500 EXP</div>
+      <button id="backBtn" onclick="backBtnClicked()">
+          Back
+      </button>
+    <script src="main.bundle.js"></script>
+  </body>
+</html>

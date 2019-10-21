@@ -1,0 +1,92 @@
+:root{
+    --text-color : #222222;
+    --header-font : pokemonFont;
+}
+@font-face{
+    font-family: pokemonFont;
+    src:url(PokemonFont.ttf);
+}
+.audioControls{
+    position:fixed;
+    bottom:20px;
+    left:45%;
+}
+#audioText{
+    position:fixed;
+    bottom:70px;
+    left:40%;
+}
+.button{
+    font-family:var(--header-font);
+    border: 0;
+    border-radius: 0.25rem;
+    background: #444;
+    color: white;
+    font-family: system-ui, sans-serif;
+    font-size:14px;
+    line-height: .9;
+    white-space: nowrap;
+    text-decoration: none;
+    padding: 5px;
+    margin: 0px;
+    cursor: pointer;
+    
+}
+.textEntry{
+    font-family:var(--header-font);
+    border: 0;
+    border-radius: 0.25rem;
+    line-height: .9;
+    white-space: nowrap;
+    text-decoration: none;
+    padding: 5px;
+    margin: 0px;
+}
+#storePg{
+    display:none;
+}
+h1, h2{
+    color: var(--text-color);
+    font-size: 24px;
+    margin-left: 115px;
+    font-family: var(--header-font);
+}
+body{
+    background-image: url("pokeballBG.jpg");
+    background-size: cover;
+}
+#intro{
+    font-family: var(--header-font);
+    margin-top: 10px;
+    margin-left: 100px;
+}
+#intro div{
+    padding:10px;
+}
+#pokenumber{
+    margin-left: 40px;
+}
+#statBlock{
+    margin-left:100px;
+}
+#pokeimage{
+    width: 180px;
+    height:180px;
+    margin-left: 150px;
+    margin-top: 30px;
+    border: 5px solid var(--text-color);
+    overflow:hidden;
+}
+input[type=text] {
+    background-color: white;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding-left: 40px;
+}
+a{
+    color: #222;
+}
+a:visited{
+    color: #444;
+}
